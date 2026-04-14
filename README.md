@@ -22,8 +22,6 @@
 sudo apt-get update -y && sudo apt-get install -y ffmpeg yt-dlp
 ```
 
-Если нет `sudo`, поставь через свой пакетный менеджер или используй статические бинарники и добавь их в `PATH`.
-
 ## ⚙️ Переменные окружения
 Пример лежит в файле `.env.example`.
 
@@ -70,8 +68,3 @@ help - Помощь и список команд
 thumb - Обложка Spotify (пример: /thumb <ссылка>)
 preview - Превью трека Spotify (пример: /preview <ссылка>)
 ```
-
-## 📝 Примечания
-- Используется Telegram Bot API (HTTP), а не MTProto.
-- `Redirect URI` в Spotify для этого проекта фактически не используется (достаточно валидного URL).
-- Если видишь `Conflict: terminated by other getUpdates request`, значит запущено больше одного экземпляра бота с тем же токеном.
